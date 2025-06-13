@@ -1,0 +1,200 @@
+[
+    {
+        "id": 1,
+        "title": "2-room apartment - 63.76 m²",
+        "type": "apartment",
+        "categories": [
+            1
+        ],
+        "is_featured": true,
+        "badge": "New",
+        "images": [
+            {
+                "full": "images/properties/1.jpeg",
+                "thumbnail": "images/properties/1_thumb.jpeg",
+                "description": "House outside view",
+                "is_main": true
+            }
+        ],
+        "price": {
+            "final": 120000
+        },
+        "details": {
+            "area": 63.76,
+            "rooms": 2,
+            "bedrooms": 1,
+            "bathrooms": 1,
+            "floor": 5,
+            "year_built": 2018,
+            "condition": "Excellent"
+        },
+        "description": "A beautiful 2-room apartment located in the heart of Almaty. It features modern amenities and is close to public transport.",
+        "amenities": [
+            "internet",
+            "parking",
+            "pool",
+            "gym",
+            "laundry",
+            "concierge"
+        ],
+        "location": {
+            "region": "Almaty",
+            "district": "Alatau",
+            "short":"Almaty, Alatau district",
+            "coordinates": [43.2389, 76.8897]
+        },
+        "agent": {
+            "name": "Askar Aitkali",
+            "title": "DomHouse Senior Realtor",
+            "phone": "+7 (700)-001-00-01",
+            "email": "askarik@domhouse.kz",
+            "photo": "images/team/1.jpg"
+        }
+    },
+    {
+        "id": 2,
+        "title": "4-room house - 120.98 m²",
+        "type": "house",
+        "categories": [
+            2
+        ],
+        "is_featured": false,
+        "badge": null,
+        "images": [
+            {
+                "full": "images/properties/2.jpg",
+                "thumbnail": "images/properties/2_thumb.jpg",
+                "description": "House outside view",
+                "is_main": true
+            }
+        ],
+        "price": {
+            "final": 250000
+        },
+        "details": {
+            "area": 120.98,
+            "rooms": 4,
+            "bedrooms": 3,
+            "bathrooms": 2,
+            "floor": 1,
+            "year_built": 2015,
+            "condition": "Good"
+        },
+        "description": "A spacious 4-room house located in a quiet neighborhood. It has a large garden and is perfect for families.",
+        "amenities": [
+            "internet",
+            "parking",
+            "garden",
+            "fireplace",
+            "laundry"
+        ],
+        "location": {
+            "region": "Astana",
+            "district": "Left Bank",
+            "short":"Astana, Left Bank",
+            "coordinates": [51.1282, 71.4307]
+        },
+        "agent": {
+            "name": "Berik Kairbekov",
+            "title": "Deputy Head of DomHouse",
+            "phone": "+7 (777) 777-7777",
+            "email": "boss@domhouse.kz",
+            "photo": "images/team/1.jpg"
+        }
+    },
+    {
+        "id": 3,
+        "title": "Office space - 45 m²",
+        "type": "office",
+        "categories": [
+            3,
+            6
+        ],
+        "is_featured": false,
+        "badge": null,
+        "images": [
+            {
+                "full": "images/properties/3.jpg",
+                "thumbnail": "images/properties/3_thumb.jpg",
+                "description": "Office space view",
+                "is_main": true
+            }
+        ],
+        "price": {
+            "final": 320000
+        },
+        "details": {
+            "area": 45,
+            "rooms": 1,
+            "floor": 3,
+            "year_built": 2020,
+            "condition": "New"
+        },
+        "description": "Modern office space available for rent in the city center. It is fully furnished and equipped with high-speed internet.",
+        "amenities": [
+            "internet",
+            "parking",
+            "security",
+            "elevator",
+            "air_conditioning"
+        ],
+        "location": {
+            "region": "Shymkent",
+            "district": "Center",
+            "short":"Shymkent, Center",
+            "coordinates": [42.3417, 69.5901]
+        },
+        "agent": {
+            "name": "Aigerim Kairbekova",
+            "title": "DomHouse Middle Realtor",
+            "phone": "+7 (777) 777-7770",
+            "email": "aigeramiss@domhouse.kz",
+            "photo": "images/team/1.jpg"
+        }
+    },
+    {
+        "id": 4,
+        "title": "Plot - 10 acres",
+        "type": "land",
+        "categories": [
+            4
+        ],
+        "is_featured": true,
+        "badge": "Best Price",
+        "images": [
+            {
+                "full": "images/properties/4.jpg",
+                "thumbnail": "images/properties/4_thumb.jpg",
+                "description": "Plot view",
+                "is_main": true
+            }
+        ],
+        "price": {
+            "final": 75000
+        },
+        "details": {
+            "area": 10000,
+            "type": "Agricultural",
+            "location": "Near the city"
+        },
+        "description": "A large plot of land available for sale. It is suitable for agricultural use and is located near the city.",
+        "amenities": [
+            "water_supply",
+            "electricity",
+            "access_road"
+        ],
+        "location": {
+            "region": "Almaty",
+            "district": null,
+            "short":"Almaty region",
+            "coordinates": [43.3569, 77.2840]
+        },
+        "agent": {
+            "name": "Dmitriy Viktorovich",
+            "title": "DomHouse Junior Realtor",
+            "phone": "+7 (777) 777-7007",
+            "email": "dimon@domhouse.kz",
+            "photo": "images/team/1.jpg"
+        }
+    }
+]

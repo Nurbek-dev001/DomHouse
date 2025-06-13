@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Apartments"
+    },
+    {
+        "id": 2,
+        "name": "Houses"
+    },
+    {
+        "id": 3,
+        "name": "Commercial"
+    },
+    {
+        "id": 4,
+        "name": "Land"
+    },
+    {
+        "id": 5,
+        "name": "Garages"
+    },
+    {
+        "id": 6,
+        "name": "New Buildings"
+    }
+]

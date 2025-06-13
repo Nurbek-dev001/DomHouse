@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post Your Listing - DomHouse</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/post-listing.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">Dom<span>House</span></div>
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="post-listing.html" class="btn-post-listing">Post Listing</a></li>
+                    <li class="auth-status">
+                        <a href="login.html" id="login-link">Login/Register</a>
+                        <div id="user-profile" style="display: none;">
+                            <span id="user-name"></span>
+                            <a href="#" id="logout-link">Logout</a>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="post-listing-section">
+        <div class="post-listing-container">
+            <h1 class="post-listing-title">Post Your Property Listing</h1>
+            <form class="listing-form" id="listingForm">
+                <div class="form-group">
+                    <label for="propertyTitle">Property Title*</label>
+                    <input type="text" id="propertyTitle" name="propertyTitle" required placeholder="e.g. Beautiful 3-Bedroom Apartment">
+                </div>
+
+                <div class="form-group">
+                    <label>Property Category*</label>
+                    <div class="category-selector">
+                        <input type="radio" id="categoryAll" name="category" value="All" class="category-option" checked>
+                        <label for="categoryAll" class="category-label">All</label>
+                        
+                        <input type="radio" id="categoryApartments" name="category" value="Apartments" class="category-option">
+                        <label for="categoryApartments" class="category-label">Apartments</label>
+                        
+                        <input type="radio" id="categoryHouses" name="category" value="Houses" class="category-option">
+                        <label for="categoryHouses" class="category-label">Houses</label>
+                        
+                        <input type="radio" id="categoryCommercial" name="category" value="Commercial" class="category-option">
+                        <label for="categoryCommercial" class="category-label">Commercial</label>
+                        
+                        <input type="radio" id="categoryLand" name="category" value="Land" class="category-option">
+                        <label for="categoryLand" class="category-label">Land</label>
+                        
+                        <input type="radio" id="categoryGarages" name="category" value="Garages" class="category-option">
+                        <label for="categoryGarages" class="category-label">Garages</label>
+                        
+                        <input type="radio" id="categoryNewBuildings" name="category" value="New Buildings" class="category-option">
+                        <label for="categoryNewBuildings" class="category-label">New Buildings</label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyPrice">Price ($)*</label>
+                    <input type="number" id="propertyPrice" name="propertyPrice" required placeholder="e.g. 250000">
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyLocation">Location*</label>
+                    <input type="text" id="propertyLocation" name="propertyLocation" required placeholder="e.g. Almaty, Alatau district">
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyPhone">Contact Phone*</label>
+                    <input type="tel" id="propertyPhone" name="propertyPhone" required placeholder="e.g. +7 777 123 4567">
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyDescription">Description*</label>
+                    <textarea id="propertyDescription" name="propertyDescription" required placeholder="Describe your property in detail..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="propertyImages">Upload Images (Max 5)</label>
+                    <input type="file" id="propertyImages" name="propertyImages" multiple accept="image/*">
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Listing</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>DomHouse</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="listings.html">Listings</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 DomHouse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+            document.addEventListener("DOMContentLoaded", function() {
+        // Check user authorization
+        let user = null;
+        try {
+            user = JSON.parse(localStorage.getItem('currentUser'));
+        } catch (error) {
+            console.error('Error parsing user data:', error);
+        }
+        if (!user) {
+            alert('Please login first');
+            window.location.href = 'login.html';
+            return;
+        }
+    });
+        document.getElementById('listingForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form values
+            const title = document.getElementById('propertyTitle').value;
+            const category = document.querySelector('input[name="category"]:checked').value;
+            const price = document.getElementById('propertyPrice').value;
+            const location = document.getElementById('propertyLocation').value;
+            const phone = document.getElementById('propertyPhone').value;
+            const description = document.getElementById('propertyDescription').value;
+            
+            // For this demo, we'll store it in localStorage
+            const listing = {
+                title,
+                category,
+                price,
+                location,
+                phone,
+                description,
+                date: new Date().toISOString()
+            };
+            
+            // Save to localStorage
+            const listings = JSON.parse(localStorage.getItem('listings') || '[]');
+            listings.push(listing);
+            localStorage.setItem('listings', JSON.stringify(listings));
+            
+            alert('Thank you! Your listing has been submitted for review.');
+            window.location.href = 'listings.html';
+        });
+    </script>
+</body>
+</html>

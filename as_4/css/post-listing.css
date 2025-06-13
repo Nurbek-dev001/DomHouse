@@ -1,0 +1,110 @@
+/* post-listing.css */
+.post-listing-section {
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+
+.post-listing-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.post-listing-title {
+    text-align: center;
+    font-size: 32px;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+.listing-form .form-group {
+    margin-bottom: 25px;
+}
+
+.listing-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.listing-form input,
+.listing-form select,
+.listing-form textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.listing-form input:focus,
+.listing-form select:focus,
+.listing-form textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.listing-form textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.category-selector {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.category-option {
+    display: none;
+}
+
+.category-label {
+    display: block;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.category-option:checked + .category-label {
+    background-color: #3498db;
+    color: white;
+    border-color: #3498db;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .post-listing-container {
+        padding: 30px 20px;
+    }
+    
+    .category-selector {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+}

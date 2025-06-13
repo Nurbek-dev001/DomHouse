@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DomHouse - Real Estate Marketplace</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-scripts.js" defer></script>
+    <script src="js/property-utils.js" defer></script>
+    <script src="js/index-page.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <nav class="main-nav">
+                <div class="logo">Dom<span>House</span></div>
+                <div class="menu-toggle"><i class="fas fa-bars"></i></div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="listings.html">Listings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="post-listing.html" class="btn-post-listing" style="display: none;">Post Listing</a></li>
+                    <li class="auth-status">
+                        <a href="login.html" id="login-link">Login/Register</a>
+                        <div id="user-profile" style="display: none;">
+                            <span id="user-name"></span>
+                            <a href="#" id="logout-link">Logout</a>
+                        </div>
+                    </li>
+                </nav>
+        </div>
+    </header>
+
+    <section class="search-section">
+        <div class="search-container">
+            <h1 class="search-title">Find Your Dream Property</h1>
+            <div class="search-tabs">
+                <div class="search-tab active">Buy</div>
+                <div class="search-tab">Rent</div>
+                <div class="search-tab">Commercial</div>
+            </div>
+            <form class="search-form">
+                <select class="search-input" id="search-select-region">
+                    <option value="">All Kazakhstan</option>
+                </select>
+                <select class="search-input" id="search-select-rooms">
+                    <option value="">Any Rooms</option>
+                </select>
+                <input type="number" class="search-input" placeholder="Price from">
+                <input type="number" class="search-input" placeholder="Price to">
+                <button class="search-btn">Search</button>
+            </form>
+            <a href="#" class="properties-map-link">Search on map</a>
+            <div id="properties-map" style="display: none;"></div>
+        </div>
+    </section>
+
+    <section class="featured-section container">
+        <div class="section-header">
+            <h2 class="section-title">Featured Properties in Kazakhstan</h2>
+            <a href="#" class="section-link">How to get here?</a>
+        </div>
+        <div class="property-grid featured-properties-grid"></div>
+    </section>
+
+    <section class="categories-section container">
+        <div class="section-header">
+            <h2 class="section-title">Categories</h2>
+        </div>
+        <div class="category-tabs"></div>
+        <div class="property-grid categories-grid"></div>
+    </section>
+
+    <section class="how-it-works container">
+        <h2 class="section-title">Buy an apartment through DomHouse</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-icon"><i class="fas fa-search"></i></div>
+                <h3 class="step-title">Find</h3>
+                <p>Search for properties that match your criteria</p>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fas fa-phone-alt"></i></div>
+                <h3 class="step-title">Contact</h3>
+                <p>Connect with verified agents or owners</p>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fas fa-home"></i></div>
+                <h3 class="step-title">View</h3>
+                <p>Visit the property in person or virtually</p>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fas fa-file-signature"></i></div>
+                <h3 class="step-title">Deal</h3>
+                <p>Complete the transaction securely</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>DomHouse</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Explore</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="listings.html">Listings</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Safety Tips</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 DomHouse. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
